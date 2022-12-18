@@ -25,14 +25,10 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     @Override
     public void onClick(View v) {
         if (v.getId() == R.id.SignUpbuttonid) {
-            String name =
-                    binding.signUpnameEditText.getText().toString();
-            String email =
-                    binding.signiUpEmailEditText.getText().toString();
-            String username =
-                    binding.signUpusernameEditText.getText().toString();
-            String password =
-                    binding.signUppasswordEditText.getText().toString();
+            String name = binding.signUpnameEditText.getText().toString();
+            String email = binding.signiUpEmailEditText.getText().toString();
+            String username = binding.signUpusernameEditText.getText().toString();
+            String password = binding.signUppasswordEditText.getText().toString();
             //checking the validity of the Name
             if (name.isEmpty()) {
                 binding.signUpnameEditText.setError("Enter an Name");

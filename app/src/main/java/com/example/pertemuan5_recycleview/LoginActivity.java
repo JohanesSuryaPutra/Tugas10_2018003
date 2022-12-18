@@ -36,7 +36,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         if (v.getId() == R.id.Signinbuttonid) {
             Boolean result = myDbHelper.findPassword(username, password);
             if (result == true) {
-                Intent intent = new Intent(LoginActivity.this, ProfileActivity.class);
+                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                 startActivity(intent);
                 session.setLogin(true);
                 finish();
